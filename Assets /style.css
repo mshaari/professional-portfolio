@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+}
+
+header {
+    padding: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: darkslategrey;
+    color: aliceblue;
+}
+
+header h1 {
+    display: inline-block;
+}
+
+header nav {
+    padding-top: 10px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 35px;
+}
+
+header nav ul li a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+body {
+    background-color: whitesmoke;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#about-me img {
+    width: 15%;
+}
