@@ -40,6 +40,87 @@ body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+#about-me {
+    background-color: cadetblue;
+    padding: 10px;
+    border: 5px solid green;
+    margin-top: 3px;
+    display: flex;
+}
+
+#about-me h2 {
+    float: left;
+    padding-left: 20px;
+    padding-right: 30px;
+    border-right: 5px solid black;
+}
+
 #about-me img {
+    display: block;
+    float: right;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: left;
     width: 15%;
+}
+
+#about-me p {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#my-work {
+    background-color: lightsteelblue;
+    padding: 10px;
+    border: 5px solid navy;
+    margin-top: 3px;
+    display: flex;
+}
+
+#my-work h2 {
+    float: left;
+    padding-left: 20px;
+    padding-right: 30px;
+    border-right: 5px solid black;
+}
+
+#my-work div {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+    /*how would i use align-content here?*/
+}
+
+#my-work div article {
+    margin: 5px 20px;
+    padding: 5px;
+    border: 3px dotted maroon;
+}
+
+#my-work div article h3 {
+    text-align: center;
+}
+
+#my-work div article img {
+    width: 500px;
+}
+
+#my-work div article p {
+    display: block;
+    padding: 3px;
+    border: 2px dotted black;
+}
+
+/* do i need to use @media screen stuff etc. ???*/
+
+#contact-me {
+    background-color: steelblue;
+    margin-top: 3px;
+    padding: 10px;
+    border: 5px solid purple;
 }
