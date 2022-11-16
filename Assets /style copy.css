@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: whitesmoke;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header {
+
+    padding: 15px;
+    background: darkslategray;
+    color: aliceblue;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header h1 {
+    /*anything here?*/
+}
+
+header nav {
+    margin: auto 10px;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 35px;
+}
+
+header nav ul li a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+#about-me {
+    margin-top: 3px;
+    display: flex;
+    background-color: cadetblue;
+    padding: 10px;
+    border: 5px solid green;
+}
+
+#about-me h2 {
+    width: 200px;
+    text-align: center;
+    font-size: 30px;
+    padding: 10px;
+    display: block;
+    border-right: 5px dotted black;
+}
+
+#about-me p {
+    margin-left: 15px;
+}
+
+#about-me img {
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+}
+
+#my-work {
+    margin-top: 3px;
+    display: flex;
+    background-color: cadetblue;
+    padding: 10px;
+    border: 5px solid green;
+}
+
+#my-work h2 {
+    width: 200px;
+    text-align: center;
+    font-size: 30px;
+    padding: 10px;
+    display: block;
+    border-right: 5px dotted black;
+}
+
+#my-work div {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#my-work div #main-project img {
+    width: ;
+}
