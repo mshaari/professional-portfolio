@@ -1,30 +1,32 @@
 * {
     box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 body {
     background-color: whitesmoke;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 header {
     display: flex;
     justify-content: space-between;
     padding: 15px;
-    font-family: 'Courier New', Courier, monospace;
     background-color: darkslategrey;
     color: aliceblue;
 }
 
 header h1 {
+    background-color: darkgoldenrod;
+    padding: 5px;
 }
 
+/* This means that the <nav> in the <header> is going to have a line-height of 200% so that when the screen shrinks and the links go on top of one another, there is ample space. Additionally, there will be an auto margin from the top (GO OVER THIS WITH ERIK) and 10px on the sides.*/
 header nav {
     margin: auto 10px;
+    line-height: 200%;
 }
 
-/* how to get the header to stop bumping down */
-
+/* This means that ... */
 header nav ul {
     list-style-type: none;
 }
@@ -45,24 +47,33 @@ header nav ul li a {
     border: 5px solid green;
     margin-top: 3px;
     display: flex;
+    flex-direction: column;
 }
 
 #about-me h2 {
     float: left;
-    padding-left: 20px;
-    padding-right: 30px;
-    border-right: 5px solid black;
+    border-bottom: 5px dotted black;
+    text-align: center;
+    padding: 10px;
 }
 
-#about-me img {
+#about-me div {
+    display: flex;
+    flex-direction: row;
+}
+
+#about-me div p {
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: justify;
+}
+
+/*SHOULD I BE CHANGING HOW THIS IMAGE IS CENTERED??*/
+
+#about-me div img {
     float: right;
     width: 15%;
     height: 15%;
-}
-
-#about-me p {
-    padding-left: 10px;
-    padding-right: 10px;
 }
 
 #my-work {
@@ -71,22 +82,29 @@ header nav ul li a {
     border: 5px solid navy;
     margin-top: 3px;
     display: flex;
+    flex-direction: column;
 }
 
 #my-work h2 {
     float: left;
-    padding-left: 20px;
-    padding-right: 30px;
-    border-right: 5px solid black;
+    border-bottom: 5px dotted black;
+    text-align: center;
+    padding: 10px;
 }
 
 #my-work div {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     padding-right: 10px;
     /*how would i use align-content here?*/
+}
+
+#my-work div article {
+    margin: 5px 20px;
+    padding: 0px 10px 10px 10px;
+    border: 3px solid blueviolet;
 }
 
 #my-work div article h3 {
@@ -109,7 +127,7 @@ header nav ul li a {
 }
 
 #my-work div #small-project {
-    width: 30%;
+    width: 45%;
 }
 
 #my-work div #small-project img {
@@ -121,24 +139,31 @@ header nav ul li a {
     text-align: center;
 }
 
-#my-work div article {
-    margin: 5px 20px;
-    padding: 0px 3px 3px 3px;
-    border: 3px solid pink;
-}
-
 /* do i need to use @media screen stuff etc. ???*/
+
+@media screen and (max-width: 855px) {
+    #my-work div #small-project {
+        width: 75%
+    }
+}
 
 #contact-me {
     background-color: steelblue;
     margin-top: 3px;
     padding: 10px;
     border: 5px solid purple;
+    display: flex;
+    flex-direction: column;
 }
 
 #contact-me h2 {
     float: left;
-    padding-left: 20px;
-    padding-right: 30px;
-    border-right: 5px solid black;
+    border-bottom: 5px dotted black;
+    text-align: center;
+    padding: 10px;
+}
+
+#contact-me p {
+    padding-left: 10px;
+    padding-right: 10px;
 }
